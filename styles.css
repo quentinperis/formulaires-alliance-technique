@@ -1,0 +1,83 @@
+/* Un style CSS inspiré des couleurs du site alliance-technique.fr */
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right, #41D0FF, #773AFF);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.form-wrapper {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #A09B9B; 
+}
+
+input {
+  border-radius: 50px;
+  border-color: #A09B9B;
+  height: 2rem;
+  padding: 0.3%;
+  caret-color: #0b7dda;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #A09B9B; 
+  border-radius: 50px; 
+  box-sizing: border-box;
+  background-color: #FEFEFE; 
+  color: #A09B9B; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  caret-color: #0b7dda;
+
+}
+
+
+button {
+  background-image: linear-gradient(to right, #149efe, #773AFF); 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; 
+  cursor: pointer;
+  display: block; 
+  margin: 0 auto; 
+}
+
+button:hover {
+  background-color: #0b7dda;
+}
+
+
+h2, #typedetransaction { 
+  color: #2A92FF;
+}

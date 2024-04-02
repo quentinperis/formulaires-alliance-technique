@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulaire WordPress</title>
+
+    <!-- Je préfère faire que parler, donc voici une idée de formulaire en html, css, javascript pour les collaborateurs-->
+    <!-- J'espère pouvoir le faire sur wordpress très bientôt dans vos locaux-->
+    <!-- J'espère pouvoir être sélectionné pour ce stage. Je compte m'investir durant plusieurs années pour réussir ma reconversion dans le développement web-->
+    <!-- Merci de m'avoir reçu pour l'entretien , Quentin.-->
+  </head>
+  <body>
+    <div class="container">
+      <h2>Formulaire Collaborateurs</h2>
+      <form action="#" method="post" id="transactionForm">
+        <div class="form-group">
+          <label id="typedetransaction" for="typeTransaction"
+            >Type de Transaction :</label
+          >
+          <select
+            id="typeTransaction"
+            name="typeTransaction"
+            onchange="showFields()"
+          >
+            <option value="">Sélectionner un type de transaction</option>
+            <option value="logo">Création de Logo</option>
+            <option value="site_vitrine">Site Vitrine</option>
+            <option value="maintenance">Maintenance de Site Web</option>
+            <option value="referencement">Référencement Naturel (SEO)</option>
+            <option value="social_ads">
+              Publicités sur les Réseaux Sociaux (Social Ads)
+            </option>
+            <option value="video_corporate">
+              Réalisation de Vidéo Corporate
+            </option>
+            <option value="site_e_commerce">Création de Site E-commerce</option>
+            <option value="google_ads">Campagnes Google Ads</option>
+          </select>
+        </div>
+        <div id="dynamicFields" style="display: none"></div>
+        <button type="submit">Soumettre</button>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
